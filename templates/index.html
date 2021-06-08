@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+     Home
+{% endblock title %}
+
+
+{% block header %}
+<section class="home pt-4">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="background-image: url('/static/img/bio.jpg');">
+            <div class="container text-white">
+                <h2 class="display-3 fw-bold">My Bio</h2>
+                <p class="lead fw-bold">-</p>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url('/static/img/about.jpg');">
+            <div class="container">
+                <h2 class="display-3 fw-bold">About Me</h2>
+                <p class="lead fw-bold">-</p>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url('/static/img/gallery.jpg');">
+            <div class="container">
+                <h2 class="display-3 fw-bold">Gallery</h2>
+                <p class="lead fw-bold">-</p>
+            </div>
+          </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+</section>
+
+<main>
+  <aside>
+      <article class="profile card-profile">
+          <header>
+              <figure>
+                  <img src="static/img/fotoprofil.jpeg">
+              </figure>
+              <h2>Muhamad Zulfikri</h2>
+              <hr>
+              <p>Mahasiswa</p>
+              <hr>
+              <p>Universitas Muhammadiyah Prof. Dr. Hamka</p>
+          </header>
+      </article>
+  </aside>
+
+  <div id="content">
+      <article id="about" class="cards">
+          <h2 class="fw-bold">Profil</h2>
+          <hr>
+          <table border="0">
+              <tr><td>Nama</td><td>: Muhamad Zulfikri</td></tr>
+              <tr><td>Nim</td><td>: 1803015256</td></tr>
+              <tr><td>Mata Kuliah</td><td>: Interaksi Manusia & Komputer</td></tr>
+              <tr><td>Dosen</td><td>: Isa Faqihuddin Hanif, M.M.S.I</td></tr>
+          </table>
+      </article>
+
+      <article id="matkul" class="cards">
+          <h2 class="fw-bold">Mata Kuliah</h2>
+          <hr>
+          <table border="0">
+              <tr style="font-weight: bold;"><td>Semester 6</td><td> Semester 7</td></tr>
+              <tr><td><li>Interaksi Manusia Dan Komputer</li></td><td><li>Riset Teknologi Informasi</li></td></tr>
+              <tr><td><li>Sistem Terdistribusi</li></td><td><li>Pengantar Kecerdasan Tiruan</li></td></tr>
+              <tr><td><li>Pemrograman Jaringan Komputer</li></td><td><li>Machine Learning</li></td></tr>
+              <tr><td><li>Praktikum Pemrograman Jaringan Komputer</li></td></tr>
+              <tr><td><li>Analisis & Strategi Algoritma</li></td></tr>
+              <tr><td><li>Jaringan Nirkabel</li></td></tr>
+              <tr><td><li>Komputasi Awan</li></td></tr>
+              <tr><td><li>Praktek Kerja</li></td></tr>
+              <tr><td><li>Implementasi Proyek</li></td></tr>
+          </table>
+      </article>
+      
+      <article id="video" class="cards">
+          <h2 class="fw-bold">Interaksi Manusia & Komputer Video</h2>
+          <hr>
+          <ul style="font-weight: bold;">
+              <li>Interaksi Manusia dan Komputer: Image, List, Iframe, Block</li>
+          </ul>
+          <div class="ratio ratio-21x9">
+          <iframe src="https://www.youtube.com/embed/nCx7E6dnR7I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+      </article>
+  </div>
+</main>
+{% endblock header %}
+    
+
+
+    

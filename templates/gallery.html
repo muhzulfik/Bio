@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    Gallery
+{% endblock title %}
+
+
+{% block header %}
+<div class="py-4"></div>
+<section class="gallery py-5">
+    <div class="container">
+        <div class="row justify-content-center align-items-center mt-5">
+            <div class="col-md-12 mb-5 px-4 text-center">
+                <h2 class="fw-bold">Code Gallery</h2>
+            </div>
+            <div class="col-md-12 mb-4">
+                <div class="card-group text-center">
+                  <div class="col">
+                    <div class="card mb-5 mx-3 shadow-sm rounded-2">
+                      <div class="inner">
+                      <img src="static/img/home.png" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-title fs-5">Home Page</p>
+                        <a href="/" class="btn btn-primary">Look UI</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card mb-5 mx-3 shadow-sm rounded-2">
+                      <div class="inner">
+                      <img src="static/img/gallery.png" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-title fs-5">Gallery Page</p>
+                        <a href="/gallery" class="btn btn-primary">Look UI</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card mb-5 mx-3 shadow-sm rounded-2">
+                      <div class="inner">
+                      <img src="static/img/login.png" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-title fs-5">Login Page</p>
+                        <a href="/login" class="btn btn-primary">Look UI</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+  $(document).ready(function(){
+    $('.col').hover(
+      function(){
+        $(this).animate({
+          marginTop: "-=3%",
+        },200);
+      },
+      function(){
+        $(this).animate({
+          marginTop: "0%"
+        }, 200);
+      }
+    );
+  });
+</script>
+{% endblock header %}
+    
+    
